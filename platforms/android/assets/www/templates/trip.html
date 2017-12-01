@@ -1,0 +1,29 @@
+<ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Trip</h1>
+      <div class="buttons">
+        <button class="button button-clear" ng-click="closeLogin()">Close</button>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-controller="PlaylistCtrl">
+            <form ng-submit="bookLock()">
+            <div class="list">
+            <label class="item item-input">
+                <span class="input-label">From</span>
+                <input type="text" g-places-autocomplete  ng-model="from" id="source">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">TO</span>
+                <input type="to" g-places-autocomplete  ng-model="to" id="source">
+            </label>
+            
+            <label class="item">
+                <button class="button button-block button-positive" type="submit">Book Trip</button>
+            </label>
+            </div>
+        </form>     
+        </div>
+    </ion-content>
+  </ion-modal-view>
+  
